@@ -121,18 +121,18 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
+      <!-- <v-btn
         icon
         @click.stop="miniVariant = !miniVariant"
       >
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
+      </v-btn> -->
+      <!-- <v-btn
         icon
         @click.stop="clipped = !clipped"
       >
         <v-icon>mdi-application</v-icon>
-      </v-btn>
+      </v-btn> -->
       <v-toolbar-title v-text="title" />
       <v-spacer />
        <!-- <v-text-field
@@ -152,13 +152,13 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
       temporary
       fixed
     >
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-footer
       :absolute="!fixed"
       app
@@ -177,7 +177,6 @@ export default {
       drawer: false,
       fixed: false,
       items: [
-
         {
           icon: 'mdi-home',
           title: 'Avaleht',
@@ -230,12 +229,6 @@ export default {
           title: 'Eesti Youtuberid',
 
         },
-        {
-          icon: 'https://yt3.ggpht.com/ytc/AAUvwngABIvlVpBRkH3JX46SLM6yHfzpDhwkwmo2sg4O=s88-c-k-c0x00ffffff-no-rj',
-          to: '/11',
-          title: 'Eesti Youtuberid',
-
-        }
       ],
       moreItems: [
 
